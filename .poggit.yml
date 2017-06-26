@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/infinity-pe/CrateKeys
+branches:
+- master
+projects:
+  CrateKeys:
+    path: CrateKeys/
+...
