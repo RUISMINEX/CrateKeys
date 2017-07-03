@@ -60,7 +60,7 @@ class Main extends PluginBase implements Listener{
 	}
 	
 	public function onInteract(PlayerInteractEvent $event){
-		$prefix = "§7[§a§lCrate§2Chest§r§7] §a";
+		$prefix = $this->getConfig()->get("Prefix");
 		$player = $event->getPlayer();
 		$heldItem = $player->getInventory()->getItemInHand();
 		$block = $event->getBlock();
