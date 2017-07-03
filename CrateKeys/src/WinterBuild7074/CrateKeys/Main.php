@@ -60,7 +60,7 @@ class Main extends PluginBase implements Listener{
 	}
 	
 	public function onInteract(PlayerInteractEvent $event){
-		$prefix = "§7[§e§lLucky§6Chest§r§7] §e";
+		$prefix = "§7[§a§lCrate§2Chest§r§7] §a";
 		$player = $event->getPlayer();
 		$heldItem = $player->getInventory()->getItemInHand();
 		$block = $event->getBlock();
@@ -76,10 +76,10 @@ class Main extends PluginBase implements Listener{
 						$random = explode(":",$rand[mt_rand(0, count($rand) - 1)]);
 						$player->getInventory()->addItem(Item::get($random[0], $random[1], $random[2]));
 					}
-					$player->sendMessage($prefix . "You opened the LuckyChest and got rewards!");
+					$player->sendMessage($prefix . "You opened the CrateChest and got rewards!");
 				}else{
 					$event->setCancelled();
-					$player->sendMessage($prefix . "You need to be holding a CrateKey to get LuckyChest rewards!");
+					$player->sendMessage($prefix . "You need to be holding a CrateKey to get CrateChest rewards!");
 				}
 			}
 		}
