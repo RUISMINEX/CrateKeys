@@ -5,6 +5,8 @@
 # Are OPs/Admins allowed to give other players CrateKeys?
 PlayerGive: true
 
+Prefix: "§7[§a§lCrate§2Chest§r§7] §a"
+
 # Where is the CrateKey block located?
 X: 498
 "Y": 76
