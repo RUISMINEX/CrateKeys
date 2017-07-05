@@ -65,7 +65,7 @@ class Main extends PluginBase implements Listener{
 		$heldItem = $player->getInventory()->getItemInHand();
 		$block = $event->getBlock();
 		$level = $block->getLevel()->getName();
-		$keyid = $this->getConfig->get("KeyID");
+		$keyid = $this->getConfig()->get("KeyID");
 		if($block->getId() === 54 || $block->getId() === 146) {
 			if($block->getX() === $this->getConfig()->get("X") && $block->getY() === $this->getConfig()->get("Y") && $block->getZ() === $this->getConfig()->get("Z") && $level === $this->getConfig()->get("World")){
 				if($heldItem->getId() === $keyid){
