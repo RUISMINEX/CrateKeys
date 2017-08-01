@@ -7,17 +7,23 @@ PlayerGive: true
 
 Prefix: "§7[§a§lCrate§2Chest§r§7] §a"
 
-# Where is the CrateKey block located?
+# Where is the CrateChest located?
 X: 498
 "Y": 76
 Z: 171
 World: Spawn
 
-# ID of the Crate Key (388 = Emerald)
+# ID of the CrateKey (388 = Emerald)
 KeyID: 388
 
 # How many items will the player recieve when they use a CrateKey?
 Number: 4
+
+# List of commands to run when a player opens the CrateChest.
+# Use {PLAYER} for the player's name.
+Commands:
+  - give {PLAYER} 265 4
+  - effect {PLAYER} 16 120
 
 # List of items to a player can get when they use a CrateKey. Random rewards will be chosen.
 Items:
@@ -177,8 +183,7 @@ Items:
   - "400:0:1"
   - "412:0:4"
   
-# List of commands to run when a player gets a CrateKey
-# Use {PLAYER} for the player, and {NAME} for the player's name
-Commands:
-    - say {NAME} got a CrateKey!
-    - tell {PLAYER} You can use the CrateKey at Spawn to open the CrateChest!
+# List of commands to run when a player gets a CrateKey.
+# Use {PLAYER} for the player's name.
+KeyGetCommands:
+  - tell {PLAYER} §eYou got a CrateKey! You can use it at Spawn to open the CrateChest!

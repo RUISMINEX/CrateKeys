@@ -1,2 +1,9 @@
-# CrateKeys for PocketMine-MP – by WinterBuild7074
-# Original Plugin by Blubberboy333 (https://github.com/Blubberboy333/CrateKeys)
+# CrateKeys
+CrateKeys for PocketMine by WinterBuild7074
+
+## Commands
+- `/cratekey <player>` – Give a Crate Key to a player
+
+## Permissions
+- `cratekey`
+- `cratekey.give`
